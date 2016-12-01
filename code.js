@@ -1,6 +1,6 @@
 
 var address = 'https://api.github.com/repos/Coolnesss/lapio-galleria/contents/profiles'
-
+console.log(address);
 $.get(address, function(data) {
   data.forEach(function(entry) {
     $.getJSON(entry.download_url, function(data) {
